@@ -620,7 +620,7 @@ class ElementPlot(BokehPlot, GenericElementPlot):
         # this will override theme if not set to the default 12pt
         title_font = self._fontsize('title').get('fontsize')
         if title_font != '12pt':
-            opts['text_font_size'] = value(title_font)
+            opts['text_font_size'] = title_font
         return opts
 
 
